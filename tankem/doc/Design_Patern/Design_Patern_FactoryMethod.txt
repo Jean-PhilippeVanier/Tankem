@@ -1,0 +1,16 @@
+	DESIGN PATERN :	 Factory Method
+	-------------------------------
+
+UTILITÉ: genere des
+
+
+			//exemple de code:
+			 -------------------------------------------------|	
+			| static Factory_DAOBalance      	          |
+			 -------------------------------------------------|
+			| static  Create(string str):                     |
+			|       	MonRetour=null                    |
+			|       	if(typeDAO == "CSV"):             |
+			|               	monRetour=DAOBalanceCSV   |
+			|       	return monRetour 		  |
+			--------------------------------------------------

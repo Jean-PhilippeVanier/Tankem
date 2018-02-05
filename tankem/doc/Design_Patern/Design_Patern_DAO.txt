@@ -1,0 +1,30 @@
+	DESIGN PATTERN : DAO Data Access Object
+
+Utilisé: gere les interactions avec un systeme externe (CSV, Oracle) de gestion de données.
+
+
+
+
+
+
+			 ----------------------	
+			|     DAOBalance    |
+			 ----------------------
+			|   Create(...)        |
+			|   Read()             |
+			|   Update(...)	       |
+			|   Delete()           |
+			|                      |
+			------------------------
+				   |
+              _____________________|______________________
+	     |            				  |
+	     V						  V
+ ----------------------				 ---------------------
+|     DAOBalanceCSV    |			|    DAOBalanceOracle |      
+|----------------------|			|---------------------|
+|   Create(...)        |			|   Create(...)       |
+|   Read()             |			|   Read() 	      |
+|   Update(...)	       |			|   Update(...)	      |
+|   Delete()           |			|   Delete()          |
+------------------------                        -----------------------

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="JS/spawn.js"></script>
+        <script src="JS/Tile.js"></script>
+        <script src="JS/Niveau.js"></script>
+        <script src="JS/main.js"></script>
+        <script src="JS/Selector.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <title>level editor</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    </head>
+    <body>
+        <main>
+            <div>
+                Nom Niveau: <input type="text" id="nomNiveau"/>
+                Taille X: <input type="text" id="tailleX" size="2"/>
+                Taille Y: <input type="text" id="tailleY" size="2"/>
+                <input type="button" id="tailleTuile" value="lol" OnClick="clickButton()"/>
+            </div>
+            <canvas height="800", width="800" id="canvas"></canvas>
+        </main>
+    </body>
+</html>
